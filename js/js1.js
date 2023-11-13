@@ -44,7 +44,7 @@ function Nhaplieu() {
   console.log("so5", so5);
   console.log("giá trị", Giatri);
 
-  var Tong = so1 + so2 + so3 + so4 + so5 / Giatri;
+  var Tong = ((so1) + (so2) + (so3) + (so4) + (so5)) / 5;
   console.log("tong", Tong);
   document.getElementById("Trungbinh").innerHTML = Tong;
 }
@@ -68,19 +68,24 @@ function HCN() {
   console.log("dai", dai);
   console.log("rong", rong);
   var dientich = dai * rong;
-  var chuvi = (dai + rong) * 2;
+  var chuvi = (dai + rong)*2;
   console.log("dientich", dientich);
   console.log("chuvi", chuvi);
   document.getElementById("tongDT").innerHTML = dientich;
   document.getElementById("tongCV").innerHTML = chuvi;
 }
 
-
 // ----bài 5----
-var so = 86;
-var tongkyso = 0;
-var hangchuc = math.floor((so)/10);
-var hangdonvi = math.floor((so)%10);
-tongkyso = hangchuc + donvi;
-console.log('tongkyso',tongkyso);
 
+function Tongkiso() {
+  var socohaichuso = document.getElementById("so2chuso").value;
+  
+  var hangchuc = Math.floor((socohaichuso) / 10);
+  var hangdonvi = Math.floor((socohaichuso) % 10);
+
+  var tongkyso = hangchuc + hangdonvi;
+  console.log("tongkyso", tongkyso);
+
+  document.getElementById('tongKS').innerHTML = tongkyso;
+
+}

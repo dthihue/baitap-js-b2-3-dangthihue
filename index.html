@@ -1,136 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-    
+  </head>
+  <body>
     <!-- bài 1 -->
     <div class="title1">
-        <h1>Bài 1: tính tiền lương nhân viên </h1>
-        <div class="topic1">
-            <p>Viết chương trình tính tiền lương nhân viên <br/> 
-                Lương 1 ngày: 100.000 <br/> 
-                Cho người dùng nhập vào số ngày làm. <br/>
-                Công thức tính lương: Lương 1 ngày * số ngày làm
-            </p>
-        </div>
+      <h1>Bài 1: tính tiền lương nhân viên</h1>
+      <div class="topic1">
+        <p>
+          Viết chương trình tính tiền lương nhân viên <br />
+          Lương 1 ngày: 100.000 <br />
+          Cho người dùng nhập vào số ngày làm. <br />
+          Công thức tính lương: Lương 1 ngày * số ngày làm
+        </p>
+      </div>
 
-        <div class="form-group">
-            <p>1 Day Salary</p>
-            <input placeholder="Enter 1 day's salary" id="luong1ngay" class="form-control w-25">
-        </div>
-        <div class="form-group">
-            <p>Number of working days</p>
-            <input id="songaylam" placeholder="Enter the number of working days" type="#" class="form-control w-25">
-        </div>
-        <br/>       
-            <button onclick="Tinhtongluong()" id="btntinhtien" type="button" class="btn btn-success">Click</button>        
-        <div class="mt-2 alert alert-success">
-            Total salary: <span id="tongluong"></span>
-        </div>
+      <div class="form-group">
+        <p>1 Day Salary</p>
+        <input
+          placeholder="Enter 1 day's salary"
+          id="luong1ngay"
+          class="form-control w-25"
+        />
+      </div>
+      <div class="form-group">
+        <p>Number of working days</p>
+        <input
+          id="songaylam"
+          placeholder="Enter the number of working days"
+          type="#"
+          class="form-control w-25"
+        />
+      </div>
+      <br />
+      <button
+        onclick="Tinhtongluong()"
+        id="btntinhtien"
+        type="button"
+        class="btn btn-success"
+      >
+        Click
+      </button>
+      <div class="mt-2 alert alert-success">
+        Total salary: <span id="tongluong"></span>
+      </div>
     </div>
 
     <!-- bài 2 -->
     <div class="title2">
-        <h1> Bài 2: Tính giá trị trung bình </h1>
-        <div class="topic2">
-            <p>Viết chương trình nhập vào 5 số thực. <br/> Tính giá trị trung bình của 5 số này và xuất ra màn hình.</p>
-         Gợi ý: Giá trị trung bình là tổng của 5 số người dùng nhập chia cho 5.
-        </div>
-    
-        <form>
-            <div class="topic0">
-                <h4 class="h3 mb-3 fw-normal">Value:</h4>
-            </div>        
-            <div class="form-floating">
-              <input type="number" class="form-control" id="number1" placeholder="Number 1">
-            </div>
-            <div class="form-floating">
-                <input type="number" class="form-control" id="number2" placeholder="Number 2">
-            </div>
-            <div class="form-floating">
-                <input type="number3" class="form-control" id="number3" placeholder="Number 3">
-            </div>
-            <div class="form-floating">
-                <input type="number4" class="form-control" id="number4" placeholder="Number 4">
-            </div>
-            <div class="form-floating">
-                <input type="number5" class="form-control" id="number5" placeholder="Number 5">
-            </div>            
-        </form>
-        <br/>
-        <button onclick="Nhaplieu()"  id="Giatri" type="button" class="btn btn-success">Click</button>        
-        <div class="mt-2 alert alert-success">
-            The average value: <span id="Trungbinh"></span>
-        </div>
+      <h1>Bài 2: Tính giá trị trung bình</h1>
+      <div class="topic2">
+        <p>
+          Viết chương trình nhập vào 5 số thực. <br />
+          Tính giá trị trung bình của 5 số này và xuất ra màn hình.
+        </p>
+        Gợi ý: Giá trị trung bình là tổng của 5 số người dùng nhập chia cho 5.
+      </div>
 
-        
+      <form>
+        <div class="topic0">
+          <h4 class="h3 mb-3 fw-normal">Value:</h4>
+        </div>
+        <div class="form-floating">
+          <input
+            type="number"
+            class="form-control"
+            id="number1"
+            placeholder="Number 1"
+          />
+        </div>
+        <div class="form-floating">
+          <input
+            type="number"
+            class="form-control"
+            id="number2"
+            placeholder="Number 2"
+          />
+        </div>
+        <div class="form-floating">
+          <input
+            type="number3"
+            class="form-control"
+            id="number3"
+            placeholder="Number 3"
+          />
+        </div>
+        <div class="form-floating">
+          <input
+            type="number4"
+            class="form-control"
+            id="number4"
+            placeholder="Number 4"
+          />
+        </div>
+        <div class="form-floating">
+          <input
+            type="number5"
+            class="form-control"
+            id="number5"
+            placeholder="Number 5"
+          />
+        </div>
+      </form>
+      <br />
+      <button
+        onclick="Nhaplieu()"
+        id="Giatri"
+        type="button"
+        class="btn btn-success"
+      >
+        Click
+      </button>
+      <div class="mt-2 alert alert-success">
+        The average value: <span id="Trungbinh"></span>
+      </div>
     </div>
-
 
     <!-- bài 3 -->
     <div class="title3">
-        <h1>Bài 3: Quy đổi tiền</h1>
-        <p>GIá của USD hiện nay đang là 23.500 VND <br/> Viết chương trình quy đổi từ USD sang VND.<br/></p>
-        Ví dụ: <br/> Người dùng nhập 2 USD => suất ra 47.000 VND.
+      <h1>Bài 3: Quy đổi tiền</h1>
+      <p>
+        GIá của USD hiện nay đang là 23.500 VND <br />
+        Viết chương trình quy đổi từ USD sang VND.<br />
+      </p>
+      Ví dụ: <br />
+      Người dùng nhập 2 USD => suất ra 47.000 VND.
 
-        <div class="form-group">
-            <p>USD</p>
-            <input id="usd" placeholder="Dollars" type="#" class="form-control w-25">
-        </div>
-        <div class="form-group">
-            <p>VND</p>
-            <input id="vnd" placeholder="Dong" type="#" class="form-control w-25">
-        </div>
-        <br/>       
-            <button onclick="trans()" id="Nhap" type="button" class="btn btn-success">Click</button>        
-        <div class="mt-2 alert alert-success">
-            Exchange: <span id="Xuat"></span>
-        </div>
+      <div class="form-group">
+        <p>USD</p>
+        <input
+          id="usd"
+          placeholder="Dollars"
+          type="#"
+          class="form-control w-25"
+        />
+      </div>
+      <div class="form-group">
+        <p>VND</p>
+        <input id="vnd" placeholder="Dong" type="#" class="form-control w-25" />
+      </div>
+      <br />
+      <button onclick="trans()" id="Nhap" type="button" class="btn btn-success">
+        Click
+      </button>
+      <div class="mt-2 alert alert-success">
+        Exchange: <span id="Xuat"></span>
+      </div>
     </div>
 
-    
     <!-- bài 4 -->
     <div class="title4">
-        <h1>Bài 4: Tính diện tích, chu vi hình chữ nhật</h1>
-        <p>Viết chương trình nhập vào 2 chiều dài và chiều rộng của HCN(hình chữ nhật).<br/>Tính và xuất ra diện tích, chu vi của HCN đó.</p>
-        Công thức:<br/>- Diện tích = dài*rộng<br/>- Chu vi= (dài+rộng)*2
+      <h1>Bài 4: Tính diện tích, chu vi hình chữ nhật</h1>
+      <p>
+        Viết chương trình nhập vào 2 chiều dài và chiều rộng của HCN(hình chữ
+        nhật).<br />Tính và xuất ra diện tích, chu vi của HCN đó.
+      </p>
+      Công thức:<br />- Diện tích = dài*rộng<br />- Chu vi= (dài+rộng)*2
 
-        <form>            
-            <h4 class="h3 mb-3 fw-normal">Input:</h4>        
-            <div class="form-floating">
-              <input type="number" class="form-control" id="dai" placeholder="Dài">
-            </div>
-            <div class="form-floating">
-                <input type="number" class="form-control" id="rong" placeholder="Rộng">
-            </div>
-        </form>
-            <h4>Output:</h4>
-        <div class="mt-2 alert alert-success">
-            <button onclick="HCN()" id="dientich" type="button" class="btn btn-success">Tổng</button>
-            Diện tích: <span id="tongDT"></span>
-            
-        </div> 
-        <div class="mt-2 alert alert-success">
-            <button onclick="HCN()" id="chuvi" type="button" class="btn btn-success">Tổng</button>
-            Chu vi: <span id="tongCV"></span>
-            
-        </div>         
+      <form>
+        <h4 class="h3 mb-3 fw-normal">Input:</h4>
+        <div class="form-floating">
+          <input
+            type="number"
+            class="form-control"
+            id="dai"
+            placeholder="Dài"
+          />
+        </div>
+        <div class="form-floating">
+          <input
+            type="number"
+            class="form-control"
+            id="rong"
+            placeholder="Rộng"
+          />
+        </div>
+      </form>
+      <h4>Output:</h4>
+      <div class="mt-2 alert alert-success">
+        <button
+          onclick="HCN()"
+          id="dientich"
+          type="button"
+          class="btn btn-success"
+        >
+          Tổng
+        </button>
+        Diện tích: <span id="tongDT"></span>
+      </div>
+      <div class="mt-2 alert alert-success">
+        <button
+          onclick="HCN()"
+          id="chuvi"
+          type="button"
+          class="btn btn-success"
+        >
+          Tổng
+        </button>
+        Chu vi: <span id="tongCV"></span>
+      </div>
     </div>
-
 
     <!-- bài 5 -->
     <div class="title5">
-        <h1>Bài 5: Tính tổng 2 ký số</h1>
-        <p>Viết chương trình nhập vào một số có 2 chữ số (vd:12,44,55)<br/>Tính tổng 2 ký số của số vừa nhập. <br/>Ví dụ:<br/>12 => tổng là 1+2=3<br/>44 => Tổng là 4+4 = 8</p>
-        Gợi ý:<br/>Cách lấy số hàng đơn vị: int so_hang_dv = so%10;<br/>Cách lấy số hàng chục: int so_hang_chuc = so/10;
+      <h1>Bài 5: Tính tổng 2 ký số</h1>
+      <p>
+        Viết chương trình nhập vào một số có 2 chữ số (vd:12,44,55)<br />Tính
+        tổng 2 ký số của số vừa nhập. <br />Ví dụ:<br />12 => tổng là 1+2=3<br />44
+        => Tổng là 4+4 = 8
+      </p>
+      Gợi ý:<br />Cách lấy số hàng đơn vị: int so_hang_dv = so%10;<br />Cách lấy
+      số hàng chục: int so_hang_chuc = so/10;
+    </div>
+    <br/>
+
+    <div class="end">
+      <div class="form-floating">
+        <input type="number" class="form-control" id="so2chuso" placeholder="Số có 2 chữ số" />
+      </div>
+    </div>
+
+
+    <div class="mt-2 alert alert-success">
+        <button
+          onclick="Tongkiso()"
+          id="tongso"
+          type="button"
+          class="btn btn-success"
+        >
+        
+          Click
+        </button>
+        
+       Tổng kí số = <span id="tongKS"></span>
+      </div>
     </div>
 
     <!-- Phần kết nối với file js thì mình dùng script:src nhé bạn  -->
     <script src="./js/js1.js"></script>
-</body>
+  </body>
 </html>
