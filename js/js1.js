@@ -20,6 +20,8 @@ function Tinhtongluong() {
   document.getElementById("tongluong").innerHTML = tongluong;
 }
 
+
+
 // *bài 2
 /*
 mô hình 3 khối:
@@ -30,11 +32,11 @@ output:
 tính giá trị trung bình và xuất ra màn hình  
 */
 function Nhaplieu() {
-  var so1 = document.getElementById("number1").value;
-  var so2 = document.getElementById("number2").value;
-  var so3 = document.getElementById("number3").value;
-  var so4 = document.getElementById("number4").value;
-  var so5 = document.getElementById("number5").value;
+  var so1 = Number (document.getElementById("number1").value);
+  var so2 = Number (document.getElementById("number2").value);
+  var so3 = Number (document.getElementById("number3").value);
+  var so4 = Number (document.getElementById("number4").value);
+  var so5 = Number (document.getElementById("number5").value);
   var Giatri = 5;
 
   console.log("so1", so1);
@@ -63,8 +65,8 @@ function trans() {
 // bài 4 //
 
 function HCN() {
-  var dai = document.getElementById("dai").value;
-  var rong = document.getElementById("rong").value;
+  var dai = Number (document.getElementById("dai").value);
+  var rong = Number (document.getElementById("rong").value);
   console.log("dai", dai);
   console.log("rong", rong);
   var dientich = dai * rong;
